@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "sourceMap": true /* Create source map files for emitted JavaScript files. */,
+    "outDir": "../test-output" /* Specify an output folder for all emitted files. */
+  }
+}

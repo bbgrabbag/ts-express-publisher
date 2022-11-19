@@ -1,0 +1,9 @@
+{
+    "execMap": {
+        "ts": "ts-node --project ./tsconfig.json"
+    },
+    "ignore": [
+        "**/*.spec.*"
+    ],
+    "watch": ["src", "playground"]
+}
