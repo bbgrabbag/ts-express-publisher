@@ -1,3 +1,7 @@
+/**
+ * @file - Override/mutate express-specific types here
+ */
+
 import * as core from "express-serve-static-core";
 
 declare global {

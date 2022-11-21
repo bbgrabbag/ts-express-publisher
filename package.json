@@ -1,17 +1,24 @@
 {
-  "name": "ts-middleware-template",
+  "name": "ts-express-publisher",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib/**",
+    "changelog.md",
+    "README.md"
+  ],
   "scripts": {
     "test": "jest",
     "dev:build": "tsc --project ./tsconfig.json",
-    "predev:build": "npm run dev:clean",
     "dev:clean": "rm -rf dist",
+    "predev:build": "npm run dev:clean",
     "playground:serve": "nodemon ./playground/index.ts",
+    "prod:clean": "rm -rf lib",
+    "prod:build": "tsc --project ./typescript/tsconfig.prod.json",
+    "preprod:build": "npm run prod:clean",
     "build": "tsc --project ./typescript/tsconfig.prod.json",
     "prebuild": "npm t && npm run clean-all",
-    "prod:clean": "rm -rf lib",
     "clean-all": "npm run dev:clean && npm run prod:clean",
     "prepare": "npm run build"
   },
